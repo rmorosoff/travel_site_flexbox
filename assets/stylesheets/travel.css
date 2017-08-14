@@ -3,6 +3,7 @@ Choose a font from google fonts to use for the text in the hero
 and use @import to include in this style sheet. The font in the image is "Bangers"
 */
 
+@import url('https://fonts.googleapis.com/css?family=Bangers');
 
 /*
 - make the masthead a flexbox container
@@ -13,6 +14,14 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - when scrolling make sure there is no gap between the masthead and top of the page
 */
 
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
 
 /*
 - make the hero div a flexbox container
@@ -24,6 +33,15 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - adjust the top margin of the hero to account for the fixed masthead
 */
 
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bangers';
+  text-shadow: 2px 2px black;
+  margin-top: 100px;
+}
 
 /*
 - Make the cards div a flexbox container
@@ -58,10 +76,10 @@ and use @import to include in this style sheet. The font in the image is "Banger
 
 /*
 MEDIUM CHALLENGE:
-Using media queries, hide the national bird column in the table when the screen is at a 
+Using media queries, hide the national bird column in the table when the screen is at a
 max width of 800px. Hide both the national bird and population column when the
 screen is at a max width of 600px
 
 HINT:
-leverage the classes .bird and .population 
+leverage the classes .bird and .population
 */
