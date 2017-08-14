@@ -103,6 +103,23 @@ Using media queries, hide the national bird column in the table when the screen 
 max width of 800px. Hide both the national bird and population column when the
 screen is at a max width of 600px
 
+
 HINT:
 leverage the classes .bird and .population
 */
+
+@media (max-width: 800px) {
+  .bird {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bird {
+    display: none;
+  }
+
+  .population {
+    display: none;
+  }
+}
